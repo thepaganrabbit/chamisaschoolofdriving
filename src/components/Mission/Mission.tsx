@@ -2,8 +2,8 @@ import React from 'react';
 
 const Mission = (): React.ReactElement => {
   return (
-    <section>
-      <div className="container-md super">
+    <section style={{marginTop: '3rem'}}>
+      <div className="container-md">
         <p>
           <b style={{fontSize: '15pt'}}>About Us:</b> <br />
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, quia
