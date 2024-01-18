@@ -29,6 +29,9 @@ const TopNav = () => {
                 <a className="nav-link" href="/pricing">
                   Pricing
                 </a>
+                <a className="nav-link" href="/documentation">
+                  Documentation
+                </a>
                 <a className="nav-link" >
                   Admin
                 </a>
