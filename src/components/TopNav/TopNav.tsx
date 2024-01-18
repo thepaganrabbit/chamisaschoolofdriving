@@ -26,7 +26,7 @@ const TopNav = () => {
                 <a className="nav-link" href="/classes">
                   Classes
                 </a>
-                <a className="nav-link" href="#">
+                <a className="nav-link" href="/pricing">
                   Pricing
                 </a>
                 <a className="nav-link" >
