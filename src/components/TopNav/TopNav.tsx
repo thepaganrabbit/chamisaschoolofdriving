@@ -32,6 +32,9 @@ const TopNav = () => {
                 <a className="nav-link" href="/documentation">
                   Documentation
                 </a>
+                <a className="nav-link" href="/schedule">
+                  Schedule
+                </a>
                 <a className="nav-link" >
                   Admin
                 </a>
