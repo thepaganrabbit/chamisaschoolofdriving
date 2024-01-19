@@ -50,7 +50,7 @@ const EmployeeTable = (): React.ReactElement => {
     },
     {
       label: 'Hourly Pay',
-      renderCell: (item: any) => item.employee_work_type === 1 ? 'N?A' : `$${item.hourly_pay}`,
+      renderCell: (item: any) => item.employee_work_type === 1 ? 'N/A' : `$${item.hourly_pay}`,
     },
     {
         label: 'Employee Work Type',
@@ -66,7 +66,7 @@ const EmployeeTable = (): React.ReactElement => {
       },
       {
         label: 'Action',
-        renderCell: (item: any) => <button className='btn btn-warning'>Edit</button>,
+        renderCell: () => <button className='btn btn-warning'>Edit</button>,
       },
   ];
   const data = { nodes };
