@@ -2,10 +2,10 @@ import React from 'react';
 
 const Mission = (): React.ReactElement => {
   return (
-    <section style={{marginTop: '3rem'}}>
+    <section style={{ marginTop: '3rem' }}>
       <div className="container-md">
         <p>
-          <b style={{fontSize: '15pt'}}>About Us:</b> <br />
+          <b style={{ fontSize: '15pt' }}>About Us:</b> <br />
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, quia
           sequi? Quas odio atque reiciendis? Eveniet in voluptates quos at unde
           doloribus quia totam ab ratione dolorem dignissimos, numquam illo.
@@ -22,9 +22,14 @@ const Mission = (): React.ReactElement => {
           aperiam, laudantium aut magni maiores fugit quis?
         </p>
         <p>
-            <b style={{fontSize: '15pt'}}>Mission Statement:</b> <br />
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita vero itaque, earum soluta dolore adipisci voluptas, temporibus saepe suscipit unde error! Consequatur, deserunt nisi ipsam tempore iure quaerat itaque cupiditate?
-            Error pariatur et odio nostrum nulla a, voluptatibus perferendis totam cum sequi ipsa velit sit magni aspernatur sapiente. Adipisci quasi ad quibusdam hic dicta veritatis nemo natus? Eaque, consequatur consequuntur!
+          <b style={{ fontSize: '15pt' }}>Mission Statement:</b> <br />
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita
+          vero itaque, earum soluta dolore adipisci voluptas, temporibus saepe
+          suscipit unde error! Consequatur, deserunt nisi ipsam tempore iure
+          quaerat itaque cupiditate? Error pariatur et odio nostrum nulla a,
+          voluptatibus perferendis totam cum sequi ipsa velit sit magni
+          aspernatur sapiente. Adipisci quasi ad quibusdam hic dicta veritatis
+          nemo natus? Eaque, consequatur consequuntur!
         </p>
       </div>
     </section>

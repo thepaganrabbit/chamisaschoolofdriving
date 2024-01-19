@@ -1,16 +1,16 @@
 .super {
-    position: relative;
-    margin-top: 3rem;
-    .brand {
-        color: black;
-        position: absolute;
-        top: 35%;
-        background-color: white;
-        left: 25rem;
-        border-radius: 30px;
-        h1 {
-            padding: 1rem;
-            font-size: 40pt;
-        }
+  position: relative;
+  margin-top: 3rem;
+  .brand {
+    color: black;
+    position: absolute;
+    top: 35%;
+    background-color: white;
+    left: 25rem;
+    border-radius: 30px;
+    h1 {
+      padding: 1rem;
+      font-size: 40pt;
     }
+  }
 }

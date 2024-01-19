@@ -3,13 +3,13 @@ import './Contact.scss';
 
 const Contact = (): React.ReactElement => {
   return (
-    <section style={{marginTop: '3rem'}}>
+    <section style={{ marginTop: '3rem' }}>
       <div className="container-md">
-        <h1 style={{marginBottom: '2rem'}}>Contact Information:</h1>
+        <h1 style={{ marginBottom: '2rem' }}>Contact Information:</h1>
         <div className="contact-container">
-            <div></div>
+          <div></div>
           <div className="espanola">
-            <h2 style={{marginBottom: '2rem'}}>Espanola Location:</h2>
+            <h2 style={{ marginBottom: '2rem' }}>Espanola Location:</h2>
             <p>
               812 N Paseo De Onate,
               <br /> Española,NM 87532 <br /> (505) 747-6474
@@ -34,7 +34,7 @@ const Contact = (): React.ReactElement => {
           <div></div>
 
           <div className="santafe">
-            <h2 style={{marginBottom: '2rem'}}>Santa Fe Location:</h2>
+            <h2 style={{ marginBottom: '2rem' }}>Santa Fe Location:</h2>
             <p>
               4989 Airport Rd,
               <br /> Santa Fe, NM 87507 <br /> (505) 984-3072

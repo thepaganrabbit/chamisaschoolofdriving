@@ -5,11 +5,11 @@ import Contact from '../../components/Contact/Contact';
 
 const Home = (): React.ReactElement => {
   return (
-  <div>
-    <Super />
-    <Mission />
-    <Contact />
-  </div>
+    <div>
+      <Super />
+      <Mission />
+      <Contact />
+    </div>
   );
 };
 
