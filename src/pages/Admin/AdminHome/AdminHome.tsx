@@ -1,9 +1,10 @@
 import React from 'react';
+import EmployeeTable from '../../../components/EmployeeTable/EmployeeTable';
 
 const AdminHome = (): React.ReactElement => {
   return (
     <section>
-      <p>Home</p>
+      <EmployeeTable />
     </section>
   );
 };
