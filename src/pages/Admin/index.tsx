@@ -4,9 +4,9 @@ import AdminHome from './AdminHome/AdminHome';
 
 const AdminRoot = (): React.ReactElement => {
   return (
-      <Routes>
-        <Route path="/" element={<AdminHome />} />
-      </Routes>
+    <Routes>
+      <Route path="/" element={<AdminHome />} />
+    </Routes>
   );
 };
 

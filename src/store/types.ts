@@ -1,2 +1,1 @@
-export interface RootModelExt {
-}
+export interface RootModelExt {}

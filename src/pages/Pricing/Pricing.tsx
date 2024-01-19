@@ -1,10 +1,14 @@
 import React from 'react';
 import { CompactTable } from '@table-library/react-table-library/compact';
+import { USDollar } from '../../utils';
 
 const Pricing = (): React.ReactElement => {
   const COLUMNS = [
     { label: 'Description', renderCell: (item: any) => item.description },
-    { label: 'Price', renderCell: (item: any) => item.price },
+    {
+      label: 'Price',
+      renderCell: (item: any) => `${USDollar.format(item.price)}`,
+    },
     { label: 'Notes', renderCell: (item: any) => item.notes },
   ];
 
@@ -41,16 +45,23 @@ const Pricing = (): React.ReactElement => {
           <CompactTable columns={COLUMNS} data={data} />
         </div>
         <div className="information">
-            <h2>Notes</h2>
+          <h2>Notes</h2>
           <p>
             Benefits to buying online is that it will automatically guarantee
             you a spot in the class. Registration will place you on the list and
-            you will need to physically come in and pay before class. You cannot attend class without paying. 
+            you will need to physically come in and pay before class. You cannot
+            attend class without paying.
           </p>
           <p>
-            Both fees for missing or not informing the instructor of your absence 24 hours prior to drive times are not refundable and must be paid before you can get your certificate.
+            Both fees for missing or not informing the instructor of your
+            absence 24 hours prior to drive times are not refundable and must be
+            paid before you can get your certificate.
           </p>
-          <p>The max amount of times you can miss your drive times without alerting the instructor is 3 with a maximum non refundable cost to you of $75.00.</p>
+          <p>
+            The max amount of times you can miss your drive times without
+            alerting the instructor is 3 with a maximum non refundable cost to
+            you of $75.00.
+          </p>
         </div>
       </div>
     </section>
