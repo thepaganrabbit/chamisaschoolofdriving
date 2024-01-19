@@ -35,7 +35,7 @@ const TopNav = () => {
                 <a className="nav-link" href="/schedule">
                   Schedule
                 </a>
-                <a className="nav-link" >
+                <a className="nav-link" href="/admin">
                   Admin
                 </a>
                 <a className="nav-link" >
