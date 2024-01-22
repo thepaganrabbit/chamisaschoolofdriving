@@ -2,8 +2,16 @@ import React from 'react';
 import { EmployeeType } from '../../types';
 import { CompactTable } from '@table-library/react-table-library/compact';
 import { USDollar } from '../../utils';
+import TableAction from '../TableAction/TableAction';
 
 const EmployeeTable = (): React.ReactElement => {
+  const updateAction = () => {
+    console.log('ready to edit');
+  };
+
+  const deleteAction = (e: string | any) => {
+    console.log('deleted ' + e);
+  };
   const nodes = [
     {
       id: '2i9293',
@@ -71,7 +79,13 @@ const EmployeeTable = (): React.ReactElement => {
     },
     {
       label: 'Action',
-      renderCell: () => <button className="btn btn-warning">Edit</button>,
+      renderCell: (item: any) => (
+        <TableAction
+          id={item.id}
+          firstAction={updateAction}
+          secondAction={deleteAction}
+        />
+      ),
     },
   ];
   const data = { nodes };
