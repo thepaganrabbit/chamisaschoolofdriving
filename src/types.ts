@@ -4,6 +4,12 @@ export enum EmployeeType {
   SUPER = 'SUPER',
 }
 
+export interface SignInProps {
+  username: string;
+  password: string;
+  clockIn?: boolean;
+}
+
 // Props
 
 export interface Clickable<T, E = unknown> {
@@ -14,4 +20,8 @@ export interface TableActionProps {
   id: string | any;
   firstAction: (e: any) => any;
   secondAction: (e: any) => any;
+}
+
+export interface LogInClockin {
+  onAction: (e: SignInProps) => void;
 }
