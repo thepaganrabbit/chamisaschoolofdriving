@@ -1,8 +1,16 @@
 import React from 'react';
 import { CompactTable } from '@table-library/react-table-library/compact';
 import moment from 'moment';
+import TableAction from '../TableAction/TableAction';
 
 const StudentTable = (): React.ReactElement => {
+  const updateAction = () => {
+    console.log('ready to edit');
+  };
+
+  const deleteAction = (e: string | any) => {
+    console.log('deleted ' + e);
+  };
   const nodes = [
     {
       id: '2i9293',
@@ -51,7 +59,13 @@ const StudentTable = (): React.ReactElement => {
     },
     {
       label: 'Action',
-      renderCell: () => <button className="btn btn-warning">Edit</button>,
+      renderCell: (item: any) => (
+        <TableAction
+          id={item.id}
+          firstAction={updateAction}
+          secondAction={deleteAction}
+        />
+      ),
     },
   ];
   const data = { nodes };
