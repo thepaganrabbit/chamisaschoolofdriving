@@ -3,16 +3,14 @@ import base64 from 'base-64';
 
 import { LogInClockin } from '../../types';
 
-const LoginBlock = ({onAction}: LogInClockin): React.ReactElement => {
+const LoginBlock = ({ onAction }: LogInClockin): React.ReactElement => {
   return (
     <div className="card">
       <div className="card-body">
         <h5 className="card-title">Login</h5>
         <label htmlFor="Email">#</label>
         <div className="input-group">
-          <span className="input-group-text">
-            #
-          </span>
+          <span className="input-group-text">#</span>
           <input className="form-control" aria-label="Email" />
         </div>
         <label htmlFor="password">Password</label>
@@ -33,12 +31,17 @@ const LoginBlock = ({onAction}: LogInClockin): React.ReactElement => {
             Clock in?
           </label>
           <div className="login-actions">
-            <button className="btn btn-primary btn-block" onClick={() => {
+            <button
+              className="btn btn-primary btn-block"
+              onClick={() => {
                 onAction({
-                    username: 'tom',
-                    password: base64.encode('djjdjdjd')
-                })
-            }}>Login</button>
+                  username: 'tom',
+                  password: base64.encode('djjdjdjd'),
+                });
+              }}
+            >
+              Login
+            </button>
           </div>
         </div>
       </div>
