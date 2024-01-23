@@ -1,0 +1,16 @@
+.cs-block {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 1rem;
+}
+.payments-block {
+  display: flex;
+  justify-content: space-evenly;
+}
+.two-fer {
+  display: flex;
+  h2 {
+    margin-right: 1rem;
+    margin-top: 1rem;
+  }
+}

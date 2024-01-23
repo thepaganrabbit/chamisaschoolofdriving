@@ -25,6 +25,10 @@ export interface Clickable<T, E = unknown> {
   onClick: (e: E) => T;
 }
 
+export interface HasText {
+  text: string;
+}
+
 export interface HasChildren {
   children: any;
 }
@@ -45,9 +49,14 @@ export interface LogInClockin {
 }
 
 export interface ModalProps extends HasChildren, Interactable<boolean> {
+  title: string;
   modalActions: ReactElement;
 }
 
 export interface ActionsProps {
   actions: Action[];
+}
+
+export interface ToolTipProps extends HasChildren {
+  timeOut?: number;
 }

@@ -1,0 +1,12 @@
+.tooltips {
+  position: relative;
+  p {
+    min-width: 100%;
+    position: absolute;
+    top: 45px;
+    left: -200px;
+    background-color: rgba(206, 231, 246, 0.823);
+    padding: 0.5rem;
+    border-radius: 8px;
+  }
+}
