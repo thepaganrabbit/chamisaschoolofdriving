@@ -39,7 +39,9 @@ const TopNav = () => {
               <a className="nav-link" href="/admin">
                 Admin
               </a>
-              <a className="nav-link" href="/employee">Employee</a>
+              <a className="nav-link" href="/employee">
+                Employee
+              </a>
             </div>
           </div>
         </div>

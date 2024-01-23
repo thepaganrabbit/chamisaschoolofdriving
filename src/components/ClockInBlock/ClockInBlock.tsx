@@ -7,9 +7,7 @@ const ClockInBlock = (): React.ReactElement => {
         <h5 className="card-title">Clock In</h5>
         <label htmlFor="Email">Username</label>
         <div className="input-group">
-          <span className="input-group-text">
-            #
-          </span>
+          <span className="input-group-text">#</span>
           <input className="form-control" aria-label="Email" />
         </div>
         <label htmlFor="password">Password</label>
@@ -19,10 +17,10 @@ const ClockInBlock = (): React.ReactElement => {
           </span>
           <input className="form-control" aria-label="Email" />
         </div>
-          <div className="login-actions">
-            <button className="btn btn-primary btn-block">Login</button>
-          </div>
+        <div className="login-actions">
+          <button className="btn btn-primary btn-block">Login</button>
         </div>
+      </div>
     </div>
   );
 };
