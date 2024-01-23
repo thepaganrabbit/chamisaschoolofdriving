@@ -8,19 +8,25 @@ const LoginBlock = ({ onAction }: LogInClockin): React.ReactElement => {
     <div className="card">
       <div className="card-body">
         <h5 className="card-title">Login</h5>
-        <label htmlFor="Email">#</label>
+        <label htmlFor="Email">Username</label>
         <div className="input-group">
           <span className="input-group-text">#</span>
           <input className="form-control" aria-label="Email" />
         </div>
-        <label htmlFor="password">Password</label>
+        <label htmlFor="password" style={{ marginTop: '2rem' }}>
+          Password
+        </label>
         <div className="input-group">
           <span className="input-group-text">
             <i className="bi bi-pass"></i>
           </span>
           <input className="form-control" aria-label="Email" />
         </div>
-        <div className="form-check">
+
+        <div
+          className="form-check"
+          style={{ marginTop: '1rem', marginBottom: '1rem' }}
+        >
           <input
             className="form-check-input"
             type="checkbox"
@@ -30,7 +36,7 @@ const LoginBlock = ({ onAction }: LogInClockin): React.ReactElement => {
           <label className="form-check-label" htmlFor="flexCheckDefault">
             Clock in?
           </label>
-          <div className="login-actions">
+          <div className="login-actions" style={{ marginTop: '2rem' }}>
             <button
               className="btn btn-primary btn-block"
               onClick={() => {

@@ -1,10 +1,11 @@
 import React from 'react';
+import { ClockInProps } from '../../types';
 
-const ClockInBlock = (): React.ReactElement => {
+const ClockInBlock = ({ inOut }: ClockInProps): React.ReactElement => {
   return (
     <div className="card">
       <div className="card-body">
-        <h5 className="card-title">Clock In</h5>
+        <h5 className="card-title">{inOut?.toString()}</h5>
         <label htmlFor="Email">Username</label>
         <div className="input-group">
           <span className="input-group-text">#</span>
@@ -18,7 +19,9 @@ const ClockInBlock = (): React.ReactElement => {
           <input className="form-control" aria-label="Email" />
         </div>
         <div className="login-actions">
-          <button className="btn btn-primary btn-block">Login</button>
+          <button className="btn btn-primary btn-block">
+            {inOut?.toString()}
+          </button>
         </div>
       </div>
     </div>

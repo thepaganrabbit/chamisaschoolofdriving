@@ -1,17 +1,23 @@
 import { ReactElement } from 'react';
 
+// Enums
 export enum EmployeeType {
   ADMIN = 'ADMIN',
   GENERAL = 'GENERAL',
   SUPER = 'SUPER',
 }
 
+export enum InOut {
+  IN = 'Clock In',
+  OUT = 'Clock Out',
+}
 export interface SignInProps {
   username: string;
   password: string;
   clockIn?: boolean;
 }
 
+// types
 export type Action = {
   id: string;
   label: string;
@@ -59,4 +65,8 @@ export interface ActionsProps {
 
 export interface ToolTipProps extends HasChildren {
   timeOut?: number;
+}
+
+export interface ClockInProps {
+  inOut: InOut | null;
 }
