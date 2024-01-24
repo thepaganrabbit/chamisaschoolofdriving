@@ -24,6 +24,10 @@ export type Action = {
   action: (e?: any) => void;
   color?: string;
 };
+type ValuePiece = Date | null;
+
+export type Value = ValuePiece | [ValuePiece, ValuePiece];
+
 
 // Props
 
