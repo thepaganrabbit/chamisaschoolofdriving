@@ -1,11 +1,16 @@
 import React from 'react';
 import ShortUniqueId from 'short-unique-id';
+import DatePicker from 'react-date-picker';
 
 import './StudentForm.scss';
 import ToolTip from '../../ToolTip/ToolTip';
+import { Value } from '../../../types';
+import { _calculateAge } from '../../../utils';
 
 const StudentForm = (): React.ReactElement => {
   const [id, setId] = React.useState<string>('');
+  const [dob, setDob] = React.useState<Value>(new Date());
+  const [age, setAge] = React.useState<number>(0);
   React.useEffect(() => {
     const uid = new ShortUniqueId({ length: 8 });
     setId(String(uid.rnd()));
@@ -25,28 +30,40 @@ const StudentForm = (): React.ReactElement => {
             aria-describedby="inputGroup-sizing-sm"
           />
         </div>
+
+        <div className="input-group input-group-sm mb-3">
+          <span className="input-group-text" id="inputGroup-sizing-sm">
+            Students DOB
+          </span>
+          <DatePicker onChange={(date: Value) => {
+            const age = _calculateAge(date as Date);
+            setAge(age);
+            setDob(date);
+          }} value={dob} />
+        </div>
         <div className="input-group input-group-sm mb-3">
           <span className="input-group-text" id="inputGroup-sizing-sm">
             Students Age
           </span>
           <input
             type="number"
+            value={age}
+            disabled
             className="form-control"
             aria-label="Sizing example input"
             aria-describedby="inputGroup-sizing-sm"
           />
         </div>
-        <div className="input-group input-group-sm mb-3">
-          <span className="input-group-text" id="inputGroup-sizing-sm">
-            Students DOB
-          </span>
-          <input
-            type="date"
-            className="form-control"
-            aria-label="Sizing example input"
-            aria-describedby="inputGroup-sizing-sm"
-          />
-        </div>
+        <select
+          className="form-select form-select-sm"
+          aria-label="Default select example"
+        >
+          <option selected disabled>
+            Select Location
+          </option>
+          <option value="Santa Fe">Santa Fe</option>
+          <option value="Espanola">Espanola</option>
+        </select>
         <div className="input-group input-group-sm mb-3">
           <span className="input-group-text" id="inputGroup-sizing-sm">
             Students ID
